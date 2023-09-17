@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+:root{
+    --purple: #443355;
+    --darkgrey:	#333333;
+    --midgrey:#555555;
+    --lightgrey: 	#999999;
+    --beige: #eeeedd;
+
+}
+/* GLOBAL CSS */
+
+* {
+  font-family: 'Montserrat', sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: none;
+    border: none;
+    outline: none;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;    
+}
+body {
+  background-color: black;
+  height: 100vh;
+  overflow: auto;
+}
+
+
+*::selection {
+    color: #eeeedd;
+    background-color: #443355;
+    height: screen  ;
+}
+
+html {
+    font-size: 75%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+section {
+    padding: 2rem 5%;
+}
+::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-color: #443355;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #555555;
+}
+
+.swiper-pagination-bullet {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50rem;
+    background-color: #999999;
+}
+
+.swiper-pagination-bullet-active {
+    width: 3rem;
+    background: #443355;
+}
+
+/* GLOBAL CSS */
+
+
+/* GLOBAL BUTTONS */
+
+.btn {
+    color: #eeeedd;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #443355;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.btn:hover {
+    color: #eeeedd;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: #443355;
+    z-index: -1;
+    transition: all 1s;
+}
+.btn:hover::before {
+    width: 160%;
+
+}
+/* GLOBAL BUTTONS */
+
+.heading {
+  margin-bottom: 2rem;
+}
+
+.heading h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+  color: var(--blue);
+  font-size: 4rem;
+}
+
+.heading h2 span {
+  position: relative;
+  z-index: 0;
+  color: var(--white);
+}
+
+.heading h2 span::before {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  z-index: -1;
+  background: var(--blue);
+  height: 0.2rem;
+  width: 80%;
+  margin-left: 10%;
+}
+
