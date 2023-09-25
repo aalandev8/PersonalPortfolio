@@ -23,7 +23,7 @@
   .card-container {
     display: flex;
     flex-wrap: wrap; /* Permite que las tarjetas se envuelvan cuando no quepan en la pantalla */
-    gap: 4rem;
+    gap: 4r em;
     max-width: 1200px; /* Ajusta el ancho máximo según tus necesidades */
   }
   
